@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test dropUp</title>
+    <style>
+        .dropup {
+            position: relative;
+            display: inline-block;
+        }
+        .dropup-content {
+            display: none;
+            position: absolute;
+            bottom: 1em;
+            background-color: aliceblue;
+            padding: 0.3em;
+            border: 1px solid black;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.459);
+            border-radius: 3px;
+
+        }
+        .dropup-content a{
+            display: block;
+            font-size: 1.5em;
+            padding: 0.2em;
+            text-decoration: none;
+            color: rgb(66, 104, 128);
+        }
+        .dropup-content a:hover {
+            color: rgb(29, 46, 56);
+            background-color: rgb(204, 211, 218);
+
+        }
+
+        .dropup:hover .dropup-content {
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Example of menu droupUp</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nesciunt at eaque illum quam eveniet veniam ducimus sint, dignissimos sequi reprehenderit? Unde dolorum sint maiores et perferendis laborum, placeat sed.</p>
+        <p>Move the mouse over the button to see the effect</p>
+    </header>
+    <main>
+        <section>
+            <div class="dropup">
+                <button class="dropbtn">Press</button>
+                <div class="dropup-content">
+                    <a href="#">Items</a>
+                    <a href="#">Materials</a>
+                    <a href="#">Process</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

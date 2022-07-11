@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropUp 3</title>
+    <style>
+        * {
+            margin:0%;
+            padding:0%;
+        }
+        .body {
+            background-color: #e97713d3;
+        }
+        .top {
+            width: 100%;
+            background-image:linear-gradient(to bottom, #b66e2e, #aa794d, #ccbdb1);
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        .btns nav {
+            display: flex;
+            margin-top: 1em;
+            padding-bottom: 0.5em;
+        }
+        [class *= 'btn-'] a {
+            text-decoration: none;
+            font-size: 1.3em;
+            margin-left: 1em;
+            height: 1em;
+            color: #352f2a;
+            font-weight:600;
+        }
+
+        .menu-h {
+            z-index: 1;
+            display: none;
+            position: absolute;
+            margin-left: 1em;
+            margin-top: -10px;
+            width: 70%;
+            border-radius: 4px;
+
+            background-color: rgba(205, 135, 222, 0.795);
+            box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.664);
+        }
+        .menu-h p {
+            text-indent: 3em;;
+            font-size: 1.2em;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1>More one test with DropUp</h1>
+            <section>
+                <div class="btns">
+                    <nav>
+                        <div class="btn-0" onmouseover="mhover(event)"><a href="#">Fruits</a></div>
+                        <div class="btn-1" onmouseover="mhover(event)"><a href="#">Cars</a></div>
+                        <div class="btn-2" onmouseover="mhover(event)"><a href="#">Animals</a></div>
+                        <div class="btn-3" onmouseover="mhover(event)"><a href="#">About</a></div>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="menu-h" onmouseout="mout()">
+                <p class="msg"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Qualidade em Documentos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt numquam veniam in corporis, tempore minima cumque, consequatur reiciendis eum omnis eius modi quia mollitia commodi et repudiandae quas rerum corrupti.</p>
+        </section>
+
+        <section>
+            <h2>Finalidades com Gestão</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sapiente ratione molestias beatae voluptatem adipisci consequatur similique fugit quo corrupti sunt earum eum, libero doloremque aliquam ullam! Expedita, quisquam necessitatibus?</p>
+        </section>
+    </main>
+    <script>
+        window.onclick = e => {
+            let elm = window.document.querySelector('div.menu-h')
+            elm.style = 'display: none;'
+        }
+        function mout(){
+            let elm = window.document.querySelector('div.menu-h')
+            elm.style = 'display: none;'
+        }
+        function mhover(e){
+            let elm = window.document.querySelector('div.menu-h')
+            switch(e.target.text){
+                case 'Fruits':
+                    elm.style = 'display: inline; background: rgba(138, 222, 135);'
+                    elm.innerHTML = '<p>As frutas são alimentos ricos em nutrientes e substâncias que contribuem com a saúde. Considerada como uma fonte natural de diversas propriedades medicinais, as frutas se tornam uma excelente opção para o organismo. Cada fruta apresenta características que atuam na prevenção de doenças e manutenção da saúde.</p>'
+                    break
+                case 'Cars':
+                    elm.style = 'display: inline; background: rgba(222, 160, 135);'
+                    elm.innerHTML = '<p>Um veículo a motor, também conhecido como veículo motorizado ou veículo automotivo, é um veículo autopropelido, comumente com rodas, que não opera sobre trilhos e é usado para o transporte de pessoas ou cargas. Os carros têm controles de direção, estacionamento, conforto para os passageiros e uma variedade de luzes. Ao longo das décadas, recursos e controles adicionais foram adicionados aos veículos, tornando-os progressivamente mais complexos.</p>'
+                    break;
+                case 'Animals':
+                    elm.style = 'display: inline; background: rgba(135, 190, 222);'
+                    elm.innerHTML = '<p>Os animais são seres vivos que possuem algumas características em comum: nascem, desenvolvem-se, reproduzem-se e morrem. O conjunto dessas etapas é chamado de ciclo vital. Eles podem ser classificados em vertebrados, invertebrados, selvagens, domésticos, terrestres, aquáticos, aéreos, entre várias outras formas.</p>'
+                    break;
+                case 'About':
+                    elm.style = 'display: inline; background: rgba(205, 135, 222, 0.514);'
+                    elm.innerHTML = ''
+                    break;
+
+            }
+
+        }
+    </script>
+</body>
+</html>

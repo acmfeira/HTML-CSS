@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test DropUp 1</title>
+    <style>
+        .dropup {
+            position: relative;
+            display: inline-block;
+        }
+        .dropup-contents {
+            display: none;/* hiden object*/
+            position: absolute;
+            z-index: 1; /*set object position preview to UP*/
+            bottom: 20px;
+            background-color: antiquewhite;
+            padding: 6px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            border-radius: 2px;
+            border: 1px solid black;
+        }
+        .dropup-contents a {
+            display: block;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 0.2em;
+            color:rgb(71, 65, 56);
+            font-weight: 400;
+        }
+        .dropup-contents a:hover {
+            color: red;
+            background-color: rgb(231, 216, 197);
+        }
+        .dropup:hover .dropup-contents{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Making a menu drouUp</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Menus dropUp is used in a lot of sites</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error, aperiam explicabo pariatur rem molestiae corporis fuga maxime iure cum nobis, debitis nulla temporibus! Dicta maiores dolore minima incidunt dignissimos.</p>                
+        </section>
+        <section>
+            <div class="dropup">
+                <button class="dropup-btn">Over Mouse</button>
+                
+                <div class="dropup-contents">
+                    <a href="#">Titulos</a>
+                    <a href="#">Ferramentas</a>
+                    <a href="#">Estudos</a>
+                    <a href="#">Atributos</a>
+                </div>
+            </div>
+        </section>        
+    </main>
+</body>
+</html>

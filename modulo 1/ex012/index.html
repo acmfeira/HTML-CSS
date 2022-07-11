@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedado localmente.</h1>
+
+    <p>Este video está hospedado localmente</p>
+
+    <video controls width="40%" poster="media/limon-poster.png"  loop>
+        <source src="media/Sherlock Holmes (1916).mp4" type="video/mp4">
+        <source src="media/limon-420.mp4" type="video/mp4">
+        <source src="media/limon-1024.ogv" type="video/ogg">
+
+        <!-- show it if any video is compatoble with navigator -->
+        <p>Seu navegador não há compatibilidade</p>
+
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/m7p0C9VJu6Q" title="T" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

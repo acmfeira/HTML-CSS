@@ -1,0 +1,14 @@
+body {
+    background: rgb( 46, 42, 42);
+    text-align: center;
+}
+p {
+    color: bisque;
+}
+p:hover {
+    color: red;
+    text-shadow: 0, 0, 10 black;
+}
+h1 {
+    color:rgb(216, 190, 190);      
+}

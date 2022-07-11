@@ -1,0 +1,131 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) ;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(16, 155, 16, 0.349);
+}
+
+header {
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 0.5em;
+}  
+header h1,p {
+    padding-top: 0.5em;
+}
+
+.top {
+    background-image: linear-gradient(to top, green, rgb(92, 165, 92), rgb(147, 189, 147));
+}
+.top nav a{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0.5em;
+}
+.top nav a:hover {
+    color:red;
+}
+.center {
+    background-color: #FFF;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+ol {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+#bugdroid img{
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#irina #droids, img {
+    width: 100%;
+}
+
+.youtubeVideo iframe{
+    width: 100%;
+}
+
+.center h1,h2 {
+    font-family: 'idroid',Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    padding-left: 0.7em;
+    margin-top: 0.5em;
+}
+.center h1 {
+    text-align: center;
+    font-size:1.5em;
+}
+.center h2 {
+    font-size: 1.2em;
+    background-image:linear-gradient(to right, rgba(0, 128, 0, 0.623),white);    
+}
+
+.center p {
+    text-indent: 2.5em;
+    text-align: justify;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+}
+
+.bottom {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: rgba(65, 153, 65, 0.349);
+    border-radius: 1em;
+    border-radius: 1em;
+    padding-bottom: 1px;
+}
+
+.bottom div p {
+    margin: 0%;
+    text-indent: 1em;    
+    padding: 0.5em 0em;
+    background-color: rgba(0, 128, 0, 0.623);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    font-size:1.2em;
+}
+
+[class *= "col-"]{
+    float: left;
+    width: 50%;
+    
+}
+
+.col-1 {
+    margin-bottom: 1em;
+}
+
+.list a:hover {
+    color: darkgreen;
+    font-weight:bold;
+}
+
+@media only screen and (max-width: 640px) {
+    .list ol {
+        width: 100%;
+    }
+}

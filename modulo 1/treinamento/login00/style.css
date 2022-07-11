@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: san-serif;
+}
+
+body {
+    background-color:darkcyan
+}
+.container {
+    width: 330px;
+
+    background-color:rgba(196, 202, 161, 0.993);
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    padding: 20px 50px; /* spacing on top/botton and left/wight */
+
+    margin-left: auto;
+    margin-right: auto; 
+
+    display: block;
+    /*
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    */
+    transform: translateY(50%); /* set vertical center */
+
+}
+.container h2 {
+    width: 100%;
+    border-bottom: 1px solid rgb(156, 140, 140);
+    margin-bottom: 1em;
+}
+.form label, input {
+    width: 100%;
+    
+}
+.form label{
+    margin-bottom: 2px;
+    color:rgb(156, 140, 140);
+    font-size: 20px;
+}
+.form input {
+    height: 1em;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    font-size:  1rem;
+    border-radius: 5px;
+    text-align: left;
+}
+.container h2,input, div.link{
+    text-align: center;
+}
+
+.form a {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(240, 231, 231);
+
+    display: flex;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.link a:hover {
+    color: red;    
+}
+

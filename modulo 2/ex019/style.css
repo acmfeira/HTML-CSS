@@ -1,0 +1,33 @@
+body {
+    background-image:linear-gradient( to right,#8c706dbb, #A69897)
+}
+
+h1 {
+    color: rgb(78, 43, 17);
+}
+
+h2 {
+    color: #594E4D;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #775e5bbe;
+    color: #261E1D;
+    text-shadow: 1px 1px 6px rgba(68, 53, 42, 0.897);
+}
+.intermediario {
+    color: #D9D1D0;
+    font-weight: bold;
+}
+
+.basico {
+     color: #837473;
+}
+
+.avancado {
+    color: #594E4D;
+}
+.destaque {
+    background: rgb(221, 172, 137);
+}
