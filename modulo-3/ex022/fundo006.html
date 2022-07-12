@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Imagem de fundo - Testes</title>
     <style>
+        :root {
+            --link-image: url(..//imagens/wallpaper002.jpg);
+        }
         body {
             height: 100vh;
-            background-color: #000;
-            background-image: url(..//imagens/wallpaper002.jpg);
+            /*background-color: #000;
+            background-image: var(--link-image);
             background-position: top center;
             background-repeat: no-repeat;
             background-size:cover;
+            background-attachment: fixed;*/
+            /*shorthand - background
+                color > img > position > repeat > [size] > attachment
+            */
+            background: #000 var(--link-image) center center no-repeat fixed;
+            background-size: cover;
+
         }
         main {
             background: #fff;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             text-align: center;
@@ -33,7 +43,15 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet inventore dolorum facere nihil, libero perspiciatis deleniti laudantium repellendus cum distinctio sit mollitia dolore at earum? Numquam quas illo dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sequi sint sit nesciunt. Doloremque repellat eligendi quo tempore ipsum amet fugit iste fuga, odio neque, dolores in vitae deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam natus amet suscipit mollitia. Atque magni, alias a adipisci ducimus sit necessitatibus nihil odio quam, eius quae. Omnis, cum dignissimos.</p>
+    
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet inventore dolorum facere nihil, libero perspiciatis deleniti laudantium repellendus cum distinctio sit mollitia dolore at earum? Numquam quas illo dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sequi sint sit nesciunt. Doloremque repellat eligendi quo tempore ipsum amet fugit iste fuga, odio neque, dolores in vitae deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam natus amet suscipit mollitia. Atque magni, alias a adipisci ducimus sit necessitatibus nihil odio quam, eius quae. Omnis, cum dignissimos.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet inventore dolorum facere nihil, libero perspiciatis deleniti laudantium repellendus cum distinctio sit mollitia dolore at earum? Numquam quas illo dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sequi sint sit nesciunt. Doloremque repellat eligendi quo tempore ipsum amet fugit iste fuga, odio neque, dolores in vitae deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam natus amet suscipit mollitia. Atque magni, alias a adipisci ducimus sit necessitatibus nihil odio quam, eius quae. Omnis, cum dignissimos.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet inventore dolorum facere nihil, libero perspiciatis deleniti laudantium repellendus cum distinctio sit mollitia dolore at earum? Numquam quas illo dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sequi sint sit nesciunt. Doloremque repellat eligendi quo tempore ipsum amet fugit iste fuga, odio neque, dolores in vitae deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam natus amet suscipit mollitia. Atque magni, alias a adipisci ducimus sit necessitatibus nihil odio quam, eius quae. Omnis, cum dignissimos.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio amet inventore dolorum facere nihil, libero perspiciatis deleniti laudantium repellendus cum distinctio sit mollitia dolore at earum? Numquam quas illo dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sequi sint sit nesciunt. Doloremque repellat eligendi quo tempore ipsum amet fugit iste fuga, odio neque, dolores in vitae deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quibusdam natus amet suscipit mollitia. Atque magni, alias a adipisci ducimus sit necessitatibus nihil odio quam, eius quae. Omnis, cum dignissimos.</p>
+
     </main>
 </body>
 </html>
