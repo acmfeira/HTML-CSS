@@ -43,7 +43,7 @@ header p {
     font-family: var(--font2);
     font-size: 3.4vw;  
     line-height: 2.5em;  
-    padding: 2vw;
+    padding: 2vw 3vw;
     border-radius: 3px;
 }
 
