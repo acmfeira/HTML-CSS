@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Resposivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        td {
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(211, 206, 206);
+        }
+        div.container {
+            overflow-x: auto;
+        }
+        @media screen and (max-width: 680px){
+            td {
+                color: red;
+            }
+            header h1{
+                text-align: center;
+                font-size: 1.7em;
+            }
+            header p{
+                text-indent: 1.3em;
+                text-align: justify;
+                padding: 0 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabelas em telas pequenas</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptates atque voluptas quod et voluptatum dicta id illo harum dolorem excepturi, nemo optio vero ut eveniet sequi rerum, velit ducimus?</p>        
+    </header>
+    <div class="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv 100"</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>41</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>17</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Tv 100"</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>41</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>17</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Aspirador de Pó</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>41</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>17</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Monitores UHD 21"</td>
+                    <td>12</td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>27</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>41</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>17</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</body>
+</html>

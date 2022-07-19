@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 600px;
+            border: 1px solid black;
+            font-size: 1.1em;
+            border-collapse: collapse;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        .nome {
+            background-color: yellow;
+        }
+        .sexo {
+            background-color: cyan;
+        }
+        .prof {
+            background-color: lightslategray;
+        }
+        .idade {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>    
+    <head>
+        <h1>Exercício de Tabelas</h1>
+    </head>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="prof">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Joa da Silva Costa</td>
+                <td>M</td>
+                <td>76</td>
+                <td>Analista de Suporte</td>
+            </tr>
+            <tr>
+                <td>Marta Fonseca Roma</td>
+                <td>F</td>
+                <td>45</td>
+                <td>Dona de Casa</td>
+            </tr>
+            <tr>
+                <td>Marilva Romero</td>
+                <td>F</td>
+                <td>17</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Joaquim Francisco Paz</td>
+                <td>M</td>
+                <td>36</td>
+                <td>CEO</td>
+            </tr>
+            <tr>
+                <td>Gustavo Martins</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Designer Software</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
