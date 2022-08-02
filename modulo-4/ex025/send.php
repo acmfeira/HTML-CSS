@@ -1,1 +1,2 @@
-Dados emviados
+<?php 
+    echo $_POST['cor'];

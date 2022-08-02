@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Example form</h1>
+    <form action="send.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend> Personal Data </legend>
+            <p>
+                <label for="iname">Name: </label>
+                <input type="text" name="name" id="iname" minlength="10" maxlength="30" required autocomplete="name" placeholder="add your full name">
+            </p>
+            <p>
+                <label for="imail">Email: </label>
+                <input type="email" name="imail" id="imail" size="20" maxlength="22" required autocomplete="email" placeholder="mymail@mail.com">
+            </p>
+            <p>
+                <label for="ifone">Fone: </label>
+                <input type="tel" name="fone" id="ifone" pattern="^\(\d{2}\)\d{4}-\d{4}$" autocomplete="tel" placeholder="(xx)xxxx-xxxx">
+            </p>    
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset" >
+        </p>
+
+    </form>
+</body>
+</html>

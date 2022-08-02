@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Test Form</h1>
+    <form action="send.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="isex" id="iman" value="h" checked><label for="iman">Masculino</label>
+            <input type="radio" name="isex" id="igir" value="m"><label for="igir">Feminimo</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <label for="ies">Futebol</label>
+            <input type="checkbox" name="ies" id="ies">
+            <label for="iba">Basquete</label>
+            <input type="checkbox" name="iba" id="iba">
+            <label for="ivo">Volei</label>
+            <input type="checkbox" name="ivo" id="ivo" checked>
+            <label for="ibas">Baseball</label>
+            <input type="checkbox" name="ibas" id="ibas">
+            <label for="ira">Randball</label>
+            <input type="checkbox" name="ira" id="ira">
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+</html>
