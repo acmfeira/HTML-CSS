@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Tests with forms</h1>
+    <form action="send1.php" method="GET" autocomplete="on">
+
+        <p>
+            <label for="iano">Data Nas: </label>
+            <input type="number" id="iano" name="ano" min="1900" max="2021" value="2021"
+            oninput="calcIdade()"
+            >
+        </p>
+        <p>
+            <label for="idadeSel">Idade: </label>
+            <output id="idadeSel">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+    <output id="test">0</output>
+    <script>
+        test.innerHTML = "funcionou!!!" //no necessary querySelector.. it is show!!!! :)        
+        function calcIdade(val){
+            let year = new Date().getFullYear();
+            idadeSel.innerHTML = Number(year) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Test</title>
+</head>
+<body>
+    <h1>Tests with Forms</h1>
+    <form method="get" action="./send.php" autocomplete="on">
+        <p>
+            <label for="isel">Selecione: </label>
+            <select name="funcao" id="isel">
+                <optgroup label="Sub Works">
+                    <option value="tecinfo">Tecnico em Informatica</option>
+                    <option value="anasup">Analista de Suporte</option>
+                    <option value="progra">programador</option>
+                </optgroup>
+
+                <optgroup label="Citys on">
+                    <option value="cast">Castilho - SP</option>
+                    <option value="bras">Brasilia - DF</option>
+                    <option value="pato">Pato de Minas - MG</option>
+                    <option value="feir">Feira de Santana - BA</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profisão: </label>
+            <input type="text" name="prof" id="iprof" list="dlist">
+
+            <datalist id="dlist">
+                <option>Desntista</option>
+                <option>Programador</option>
+                <option>Desiner</option>
+                <option>FullStack</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iinfo">Informações:</label><br>
+            <textarea name="info" id="iinfo" cols="40" rows="5" maxlength="200"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Confirm">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

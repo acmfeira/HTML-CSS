@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test with Forms - plus javascript</h1>
+    <form method="get" action="./send.php" autocomplate="on">
+        <p>
+            <label for="in1">Numero 1: </label>
+            <input type="number" min="1" max="20" name="num1" id="in1" value="5"
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Numero 2:</label>
+            <input type="number" min="10" max="30" value="20" name="num2" id="in2"
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)"
+            >
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Clear">
+        </p>
+    </form> 
+</body>
+</html>

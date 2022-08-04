@@ -1,2 +1,3 @@
 <?php 
-    echo $_POST['cor'];
+    echo $_POST['info'];
+?>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Test with form - plus javascript</h1>
+    <form action="./send1.php" method="GET"><!--set as send1 to show link in browser-->
+        <p>
+            <label for="irang">Sel. Value: </label>
+            <input type="range" name="range" id="irang" min="20" max="250" value="112"
+            oninput="output.innerHTML = Number(irang.value)"
+            >
+        </p>
+        <p>
+            <label for="output">Your sel: </label>
+            <output id="output">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Confirm">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
