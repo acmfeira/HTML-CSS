@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas Individuais - Vivian Becker</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600&display=swap');
+
+        *{margin:0;padding: 0; text-decoration:none;font-family: 'Nunito';font-size: 18px;list-style:none}
+
+        :root {
+            --imgCapaDesktop: url('https://zelocorporal.com/wp-content/uploads/2022/07/Capa-Desktop3.png');
+            --imgBGreenE: url('https://zelocorporal.com/wp-content/uploads/2022/07/6.png');
+            --imgBWhiteE: url('https://zelocorporal.com/wp-content/uploads/2022/07/5.png');
+            --imgPurple: url('https://zelocorporal.com/wp-content/uploads/2022/07/88.png');
+        }
+        body {
+            display: block;
+        }
+
+        .padding {
+            display: flex;flex-wrap: wrap;
+            justify-content: center;
+            padding: 3em 0;
+            min-height: 570px;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 50px;font-family: 'Anton';color:#24DBC7;text-align: center;margin: 30px 0;
+        }
+        .image {
+
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin:auto;
+            
+            height: 300px;
+        }
+
+        .buttom {
+            font-size:15px;
+            font-weight:800;
+            font-family:'Nunito',Sans-serif;
+            letter-spacing: 2px;
+            text-transform:uppercase;
+        }
+
+        .style1{
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgb(0,0,0,.3);
+            background-color:  #3E408D; color:white;
+            padding: 15px 25px;
+        }
+        .style2 {
+            border-radius: 5px;
+            box-shadow: 0 0 30px rgb(0,0,0,.3);
+            background-color:  #24DBC7; color:white;
+            padding: 15px 25px;
+        }
+
+        .header {
+            position: relative;
+            display: flex;flex-direction: column;
+            justify-content: center;
+            background-image: var(--imgCapaDesktop);
+            background-repeat: no-repeat;
+            min-height: 650px;
+        }
+
+        .header .child {
+            display: grid;
+            row-gap: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+        .header .child div {margin: 8px}
+
+        .header .child p {
+            font-family: 'Anton' ,sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            color: white;
+        }
+        
+        .item0 {
+            background: var(--imgBGreenE);
+            display: grid;
+            justify-content: center;
+            padding: 50px;
+        }
+        .item0 p{
+            text-align: center;
+            font-family: 'Anton';
+            color: white;
+            font-size: 50px;
+        }
+        
+        .grid {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0px 10px;            
+        }
+        .grid-0 {
+            display: block;
+            margin: 0 10px;
+            max-width: 600px;
+        }
+
+        .grid-1 {
+
+            display: grid;
+            max-width: 630px;
+            row-gap: 70px;
+            margin: 0 10px;
+
+        }
+        
+        .grid p {text-align: justify;}
+
+        .contB {
+            background: var(--imgBGreenE);
+        }
+        .contB p{
+            color:#3E408D
+        }
+        .contB-0 {
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .contB-1 {
+            display:block;text-align: center;max-width: 380px; margin: 15px 0;            
+        }
+        .contB-1 img {height: 180px;}
+        .contB-1 p {color:black;}
+
+        .plan-disp {
+            background: var(--imgPurple);
+            display: grid;
+            text-align:center;
+            justify-content: center;
+            row-gap: 40px;
+        }
+        .parent {
+            display: flex;flex-wrap:wrap;            
+        }
+        .plan-disp-child{
+            display: block; margin: 20px 0;
+        }
+        .plan-disp-child > i {
+            margin: 10px 0;
+        }
+
+        .plan-disp .valor{
+            color: #24DBC7;font-weight:700;margin:20px
+        }
+        .plan-disp > div {
+            display: flex;justify-content: center;            
+            font-size:18px;font-weight:400;text-align:center;color:white;
+        }
+
+        .image-group {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+        .image-group div{
+            display: grid;
+            row-gap: 10px;
+        }
+        .image-group img {
+            width: 390px;
+            border-radius: 4px;
+            margin: 0px;
+        }
+
+        .duvidasF {
+            background: var(--imgBGreenE);display:block;text-align:center;padding: 3em 0;
+        }        
+        .duvidasF ul {display: flex;justify-content: center;}
+        .duvidasF .lista {display: flex;flex-direction: column;justify-content: center;width: 600px;}
+        .duvidasF .lista li {margin: 0px;border-bottom: 1px solid white;text-align: left;}
+        .duvidasF .lista div {padding: 10px}
+        .duvidasF .lista p::before{
+            /*f0da*/
+            content: '\23F5';
+            font-size: 25px;
+            margin: 0 5px;
+        }        
+        .footer {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            color:white;
+            row-gap: 30px;
+            padding: 50px 10px;
+        }
+        .footer div {
+            display: inline-block;
+            text-align: center;            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="child">
+                <div>
+                    <img width="340" src="./assets/image00.png" alt="">
+                </div>
+                <div>
+                    <p >Toque no link abaixo e receba meu contato<br>para começarmos sua transformação.
+                </div>
+                <div class="buttom">
+                    <a href="" target="_black">
+                        <div class="style1">Quero ser team zelo corporal</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="item0">
+                <p>O que está incluso:</p>
+                <img src="./assets/image02.png" alt="item0">
+            </div>
+        </section>
+        
+        <section >
+            <div class="item1 grid padding" style="background: var(--imgPurple);">
+                <div class="padding">
+                    <div class="item1-0 grid-0">
+                        <p class="title">Entenda Como Funciona:</p>
+                        <div class="image">
+                            <img  src="./assets/image01.png" alt="item-0"/>
+                        </div>
+                    </div>
+                    <div class="item1-1 grid-1" style="color:white">
+                        <p>
+                            A consulta @zelocorporal se trata de um encontro ao vivo, olho no olho, eu e você. Ele acontece no Google meet (é gratuito, pode ser feito pelo seu celular ou pelo navegador do seu computador). Ao final dela você recebe o seu planejamento de treino em um aplicativo, 
+                            <span style="color: #24DBC7"><i>nada de esperar para receber o seu treino, ele será enviado na mesma hora!</i></span>
+                        </p>
+                        
+                        <p>
+                            Você irá marcar dia e horário comigo de acordo com a sua disponibilidade, mesmo que não tenha um horário específico na minha agenda, converse comigo para eu ver como posso resolver o seu problema — eu darei um jeito.
+                        </p>
+    
+                        <p>
+                            Quando chegar o dia e horário, eu te enviarei um link diretamente no seu Whatsapp para nos falarmos.
+                        </p>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="item2 grid padding" style="background: var(--imgBWhiteE)">
+                <div class="padding">
+                    <div class="item2-0 grid-0">
+                        <p class="title">Antes da Consulta:</p>
+                        <div class="image">
+                            <img src="./assets/image03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item2-1 grid-1" style="color:black">
+                        <p>Antes mesmo do nosso encontro você irá responder uma anamnese bem completa e enviará as fotos da avaliação postural no meu Whatsapp.</p>
+                        <p>Esses dados irão me preparar para a nossa consulta, tornando-a mais proveitosa e dinâmica, visto que eu já vou te conhecer bastante.</p>
+                        <p style="color: #4C2A85;">A consulta não será realizada sem as fotos e anamnese respondida com antecedência.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="item3 grid padding" style="background: var(--imgBGreenE)">
+                <div class="padding">
+                    <div class="item3-0 grid-0">
+                        <p class="title" style="color:#3E408D">Durante a consulta:</p>
+                        <div>
+                            <img src="./assets/image04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item3-1 grid-1">
+                        <p>
+                            Durante a consulta eu irei te conhecer melhor, como você já respondeu a anamnese e me mandou as fotos para avaliação postural, é hora de desabafar, me contar os seus reais anseios e destrinchar as suas dificuldades e desejos.
+                        </p>
+                        <p>
+                            É ali onde eu vou te explicar o que iremos fazer, como você pode usar estratégias para se beneficiar mais do meu acompanhamento e qual o caminho certo para evoluir.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="item3 grid padding" style="background: var(--imgPurple)">
+                <div class="padding">
+                    <div class="item3-0 grid-0">
+                        <p class="title" style="text-align: center;">Após a consulta:</p>
+                        <div class="image" style="height: 220px;">
+                            <img src="./assets/image05.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item3-1 grid-1" style="color:white">
+                        <p>
+                            Ao término da consulta eu irei te enviar o seu treino para o aplicativo que deve estar instalado no seu celular e cadastrado com o mesmo e-mail da anamnese.
+                        </p>
+                        <p>
+                            Você deverá gravar 10 vídeos (dos exercícios que quiser) e me enviar na primeira semana para eu corrigir. Serão 10 vídeos 1 única vez nessa primeira semana. Após 15 dias, você deverá me enviar novamente MAIS 10 vídeos para eu ajustar a sua técnica e confirmar que está tudo certo.
+                        </p>
+                        <p>
+                            É imprescindível que você não esqueça de me enviar os vídeos, você precisa aprender a técnica para ter resultados.
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="contB padding" >
+                <p class="title" >Bônus exclusivos</p>
+                <div class="contB-0 padding" >
+                    <div class="contB-1">
+                        <img src="./assets/image06.png"  alt="">
+                        <p>E-book 80 receitas saudáveis</p>
+                    </div>
+                    <div class="contB-1">
+                        <img src="./assets/image07.png" alt="">
+                        <p>E-book Guia de industrializados</p>
+                    </div>
+                    <div class="contB-1">
+                        <img src="./assets/image08.png" alt="">
+                        <p>E-book Faça o que precisa ser feito</p>
+                    </div>
+                    <div class="contB-1">
+                        <img src="./assets/image09.png" alt="">
+                        <p>
+                            + de 50 cards explicativos sobre alimentação saudável, treino, diabetes, colesterol, lista de compras para uma alimentação nutritiva e muito mais!
+                        </p>
+                    </div>
+                    <div class="contB-1">
+                        <img src="./assets/image10.png" alt="">
+                        <p>
+                            Planner diário de presença no treino @zelocorporal imprima e mantenha o controle dos seus treinos
+                        </p>                        
+                    </div>
+                    <div class="contB-1">
+                        <img src="./assets/image11.png" alt="">
+                        <p>
+                            Planner semanal @zelocorporal imprima para organizar melhor a sua semana
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="plan-disp padding">
+                <p class="title">Planos disponíveis</p>
+                <div class="parent">
+                    <div class="plan-disp-child">
+                        <i class="fa fa-trophy fa-3x" style="color: #FFCB6A"></i>
+                        <div>
+                            <p>Plano Trimestral</p>
+                            <p>90 dias de acompanhamento</p>
+                            <p class="valor">R$ 847,00</p>    
+                        </div>
+                        <img style="max-width:420px;font-weight: 700;" src="./assets/image12.png" alt="">
+                    </div>
+                    <div class="plan-disp-child">
+                        <i class="fas fa-medal fa-3x" style="color: #FFCB6A"></i>
+                        <div>
+                            <p>Plano Mensal</p>
+                            <p>30 dias de acompanhamento</p>
+                            <p class="valor">R$ 347,00</p>    
+                        </div>
+                        <img style="max-width: 420px" src="./assets/image13.png" alt="">
+                    </div>                
+                </div>
+                <p style="background:white;padding:15px 90px;font-weight:700;margin: 0 20px;border-radius:3px">Pagamento com cartão de crédito pelo mercado pago em até 6x sem juros ou á vista pelo pix.</p>
+            </div>
+        </section>
+
+        <section>
+            <div style="display: block;text-align:center" class="padding">
+                <p class="title">O que as alunas dizem:</p>
+                <div class="image-group" >
+                    <div>
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-12.57.53-1024x529.jpeg" alt="aluna0">
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.00.45-1024x310.jpeg" alt="aluna1">
+    
+                    </div>
+                    <div>
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.04.30-2-1024x382.jpeg" alt="aluna2">
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.13.26-1-1024x336.jpeg" alt="aluna3">
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.04.30-1024x178.jpeg" alt="aluna4">
+                    </div>
+                    <div>
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.13.23-1024x504.jpeg" alt="aluna5">
+                        <img src="https://zelocorporal.com/wp-content/uploads/2022/07/WhatsApp-Image-2022-07-10-at-13.13.27-1024x444.jpeg" alt="aluna6">    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="duvidasF" >
+                <p class="title" style="color: #3E408D">Dúvidas Frequentes</p>
+                <ul class="ul">
+                    <div class="lista">
+                        <li>
+                            <a href=""><div><p>O treino será trocado quando?</p></div></a>
+                        </li>
+                        <li>
+                            <a href=""><div><p>Posso te mandar mensagem no Whatsapp?</p></div></a>
+                        </li>
+                        <li>
+                            <a href=""><div><p>Posso mandar os vídeos na segunda semana?</p></div></a>
+                        </li>
+                        <li>
+                            <a href=""><div><p>O treino ficará disponível no app até quando?</p></div></a>
+                        </li>
+                        <li>
+                            <a href=""><div><p>Preciso enviar as fotos antes da consulta?</p></div></a>
+                        </li>
+                        <li>
+                            <a href=""><div><p>Qual a diferença da Consulta para a ELITE e para o BY ME?</p></div></a>
+                        </li>
+        
+                    </div>
+                </ul>
+            </div>
+    
+        </section>
+    </main>    
+    <footer>
+        <div class="footer">
+            <div>
+                <img src="./assets/image14.png" alt="">
+            </div>
+            <div>
+                <p style="font-family:'Anton';font-size: 21px;">Toque no link abaixo e receba meu contato<br> para começarmos sua transformação.</p>
+            </div>
+            <div class="buttom" >
+                <a href="" targe="_Bank">
+                    <div class="style2">Quero ser team zelo corporal</div>
+                </a>
+            </div>
+    </div>
+    </footer>
+</body>
+
+</html>

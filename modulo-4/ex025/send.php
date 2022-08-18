@@ -1,3 +1,3 @@
 <?php 
-    echo $_POST['info'];
+    echo $_POST['color'];
 ?>

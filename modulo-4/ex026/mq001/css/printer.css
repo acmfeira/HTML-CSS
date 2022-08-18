@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {
+    margin: 10px;padding: 10px;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height:1.5em;
+    text-align: justify;
+    text-indent: 30px;
+}
+menu {
+display: none;
+}
+article::after{
+    content: "Estes dados foram impresso no dia";
+    position: absolute;
+    bottom: 0;
+}
