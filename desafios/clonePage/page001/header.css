@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    background-color: #2F2F2F;
+}
+.drop {
+    padding: 8px 15px;
+}
+.drop:hover{
+    background: var(--color-hover)
+}
+.drop a{
+    display: inline;
+    position: relative;
+    color: white;
+    font-size: 17px;
+}
+.sub {
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    background: var(--color-hover);
+    box-shadow: 3px 3px 6px rgb(0,0,0,.2)
+}
+.sub a {
+    padding: 8px 15px;
+    color:white;
+    font-size: 12px;
+}
+.sub a:hover{
+    background-color: rgb(90,90,90)
+}
+.drop:hover .sub {display: grid;}
