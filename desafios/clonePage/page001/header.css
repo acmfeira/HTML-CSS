@@ -1,9 +1,11 @@
 .menu {
     display: flex;
     background-color: #2F2F2F;
+    margin: -4px 0;
 }
 .drop {
-    padding: 8px 15px;
+    padding: 10px 15px;
+    border: 1px solid;    
 }
 .drop:hover{
     background: var(--color-hover)
@@ -19,12 +21,13 @@
     position: absolute;
     border-radius: 3px;
     background: var(--color-hover);
-    box-shadow: 3px 3px 6px rgb(0,0,0,.2)
+    box-shadow: 3px 3px 6px rgb(0,0,0,.2);
+    
 }
 .sub a {
     padding: 8px 15px;
     color:white;
-    font-size: 12px;
+    font-size: 14px;
 }
 .sub a:hover{
     background-color: rgb(90,90,90)
