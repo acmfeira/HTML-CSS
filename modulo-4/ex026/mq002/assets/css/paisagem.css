@@ -1,0 +1,8 @@
+@charset "UTF8";
+
+/*display horizontal (landscape)*/
+
+body {
+    background-image: url(../imgs/cev-landscape.jpg);
+    background-position: left bottom;
+}

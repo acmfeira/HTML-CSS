@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* display vertical (portrait)*/
+
+body {
+    background-image: url(../imgs/cev-portrait.jpg);
+    background-position: center bottom;
+}
