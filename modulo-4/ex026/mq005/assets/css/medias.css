@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*
+Tipical Device Breakpoints
+Small Window: - 600px
+Cel: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Large Window: 1200px -
+*/
+
+
+/*tablet*/
+@media screen and (min-width: 760px) and (max-width: 992px){
+
+    body {
+        margin: auto;
+        width: 82vw;
+    }
+
+    div h1 {
+        padding: 5px;     
+    }
+    
+    #menuButtom {display: none;}
+        
+    #menu {display: flex;justify-content: center;}
+
+    #menu li {
+        padding: 8px 20px;
+    }
+
+}
+
+@media screen and (min-width: 922px) and (max-width: 1200px){
+
+    * {
+        font-size: 1.02em;
+    }
+
+    body {
+        margin: auto;
+        max-width: 950px;
+    }
+
+    div h1 {
+        padding: 5px;
+    }
+
+    #menuButtom {display: none;}
+
+    #menu {display: flex;justify-content: center}
+
+    #menu li {padding: 8px 20px;}
+}
+
+@media screen and (min-width: 1200px) {
+
+    * {
+        font-size: 1.03em;
+    }
+
+     body {
+        margin:auto;
+        max-width: 950px;
+     }
+
+    div h1 { padding: 10px; font-size: 1.1em ;}
+
+    #menuButtom { display: none;}
+
+    #menu {display: flex;justify-content:center}
+
+    #menu li {padding: 8px 20px;}
+}
+
+@media print {
+
+    body {
+        display: grid;
+        row-gap: 20px;
+        margin: 0 15px;
+    }
+
+    #menuButtom {display: none;}
+    #menu {display:  none;}
+
+    div h1 {
+        font-size: 1.7em;
+    }
+
+    article h2 {
+        font-size: 1.3em;
+    }
+
+}

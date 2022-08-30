@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://unicode-table.com/en/html-entities/">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/medias.css">
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Mobile First</title>
 </head>
-<body   >
+<body>
     <header>    
-        <div>
-            <h1>Meu Site</h1> 
-            <button id="menuButtom" onclick="showHide()" >&#9776;</button>
-        </div>
-        <menu>
-            <ul id="menu">
+        <h1>Meu Site</h1> 
+        <i id="burger" onclick="showMe()" class="material-icons">menu</i>
+        <menu id="items">
+            <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
@@ -26,6 +25,15 @@
             </ul>
         </menu>
     </header>    
+    <script>
+
+        let menu = document.querySelector('menu').style;
+        function showMe(){
+
+            items.style.display = items.style.display == 'block' ? 'none' : 'block'
+
+        }
+    </script>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
@@ -52,17 +60,5 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt rem voluptate eveniet omnis perferendis quam ex vero, sit iure minus, hic totam vitae vel numquam necessitatibus possimus voluptatum, saepe quia?
             </p>
         </article>
-    </main>
-    <script>
-
-        function showHide(){
-            var menu = document.querySelector("#menu");              
-            
-            let opc = menu.style.display == 'block' ? "none" : "block"
-            menu.style.display = opc;
-
-        }
-
-    </script>
-</body>
+    </main></body>
 </html>
