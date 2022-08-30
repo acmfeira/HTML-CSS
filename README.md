@@ -8,5 +8,5 @@ Gerenciando repositórios.
 <a href="https://acmfeira.github.io/HTML-CSS/desafios/d-012/my-desafio/index-0.html" 
 target="_blank">Cordel Moderno - Desafio</a>
 
-<a href="https://acmfeira.github.io/HTML-CSS/modulo-4/" target="_blank">Aulas Mobile first</a>
+<a href="https://acmfeira.github.io/HTML-CSS/modulo-4/ex026/mq005-prof/index.html" target="_blank">Aulas Mobile first</a>
 
