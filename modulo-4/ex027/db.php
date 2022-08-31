@@ -27,7 +27,6 @@
         print_r($status);
     }
 
-    $conn->close();
     /*
     $res = $db.exec('select * from UserLogin');
     var_dump($res->fetchArray());

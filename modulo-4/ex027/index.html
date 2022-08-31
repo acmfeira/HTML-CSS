@@ -51,17 +51,17 @@
             popula();
         })
 
-        function popula(){
+        let popula = ()=>{
             $.post('db.php',$('#myForm').serialize(),function(data,status){
                 if(data=='success'){
-                    alert('Success Cadaster!!!')
+                    alert('Success in Registratin\nWell come!!!');
                 } 
                 else { 
                     alert('Opps!!!!\nPossible >> User Name << has existing!! ')
-                    $('#pass').val(null)
-                    $('#user').val(null)
-                    $('#user').focus()
                 }
+                $('#pass').val(null)
+                $('#user').val(null)
+                $('#user').focus()
             });
         }
 
