@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+Tipical Device Breakpoints
+Small Window: - 600px
+Cel: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Large Window: 1200px -
+*/
+
+@media screen and (min-width: 768px){
+    
+    i#burger {
+        display:  none;
+    }
+
+    /*show menu*/
+    menu {display: block}
+
+    /*set items orientation*/
+    menu > ul > li{display: inline-block;}
+
+    main {
+        width: 768px;
+    }
+}

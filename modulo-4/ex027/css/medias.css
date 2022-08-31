@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+Tipical Device Breakpoints
+Small Window: - 600px
+Cel: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Large Window: 1200px -
+*/
+
+@media screen and (min-width: 768px){
+
+    * {
+        font-size: 1.06em;
+    }
+
+    div.container {
+        display: grid;        
+        gap: 30px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    div.its {
+        display: flex;
+        align-items: center;
+    }
+
+    div.its label {
+        text-align: right;
+        width: 130px;
+    }
+    div.its input {
+        width: 330px;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    div#buttoms {
+        gap: 30px;
+        font-size: 0.8em;
+    }
+    div#buttoms input{
+        width: 140px;
+    } 
+}

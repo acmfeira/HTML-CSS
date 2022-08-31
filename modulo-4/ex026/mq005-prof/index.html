@@ -7,10 +7,10 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href=".css/media-query.css">
     <title>Mobile First</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>    
         <h1>Meu Site</h1> 
         <i id="burger" onclick="showMe()" class="material-icons">menu</i>
@@ -26,6 +26,10 @@
         </menu>
     </header>    
     <script>
+
+        function mudouTamanho(){
+            items.style.display = window.innerWidth >= 768 ? 'block' : 'none';
+        }
 
         let menu = document.querySelector('menu').style;
         function showMe(){
