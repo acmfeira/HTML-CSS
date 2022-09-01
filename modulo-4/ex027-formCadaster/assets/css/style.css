@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+.body, html {
+    display: grid;
+    background-color: rgb(240,240,240);
+}
+
+#container-login {
+    display: grid;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(200,200,200);
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+legend {
+    text-align: center;
+    padding: 0 8px;
+}
+
+.childItens {
+    display: grid;    
+    row-gap: 10px;
+    padding: 10px 5px;
+    width: 90vw;
+    max-width: 300px;
+}
+
+.childItens > .sep {
+    display: grid;
+}
+
+.inputBox {
+    padding: 4px;
+    margin-bottom: 2px;
+    color: rgb(74, 91, 96);
+    background-color: rgb(240,240,240);
+    border: 1px solid rgb(150,150,150);
+    border-radius: 2px;
+}
+
+.childItens label {
+    color: rgb(80, 80, 80);
+    font-weight:bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons > input {
+    width: 80px;
+    padding: 6px 0px;
+    margin: 2px 0;
+    font-weight: bold;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,.22)
+}

@@ -1,0 +1,31 @@
+
+/*
+Tipical Device Breakpoints
+Small Window: - 600px
+Cel: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Large Window: 1200px -
+*/
+
+@media screen and (min-width: 768px){
+    
+    .childItens {
+        max-width: 600px;
+    }
+
+    .childItens label {
+        font-size: 1.3em;        
+    }
+    .inputBox {
+        padding: 2px;
+        font-size: 1.5em;
+    }
+
+    .buttons > input {
+        width: 150px;
+        padding: 10px 0;
+        font-size: 1.1em;
+    }
+
+}
