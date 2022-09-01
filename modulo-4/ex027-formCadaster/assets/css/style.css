@@ -28,17 +28,18 @@ legend {
 .childItens {
     display: grid;    
     row-gap: 10px;
-    padding: 10px 5px;
-    width: 90vw;
-    max-width: 300px;
+    padding: 10px 10px;
+    width: 80vw;
+    max-width: 260px;
 }
 
 .childItens > .sep {
     display: grid;
+    margin: 0 8px;
 }
 
 .inputBox {
-    padding: 4px;
+    padding: 4px 0;
     margin-bottom: 2px;
     color: rgb(74, 91, 96);
     background-color: rgb(240,240,240);
@@ -57,8 +58,8 @@ legend {
 }
 
 .buttons > input {
-    width: 80px;
-    padding: 6px 0px;
+    width: 90px;
+    padding: 10px 0px;
     margin: 2px 0;
     font-weight: bold;
     border: 1px solid rgb(150,150,150);
